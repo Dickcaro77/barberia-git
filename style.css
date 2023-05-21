@@ -1,0 +1,283 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    background: #9b9b9b;
+    padding: 20px 0;
+}
+
+.caja{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li{
+
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform:uppercase;
+    color: #ffb810;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+
+}
+
+nav a:hover{
+      color:blue;
+      text-decoration: underline;
+
+}
+
+.Productos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+    
+}
+
+.Productos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.3%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border-color: #ffb810;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+.Productos li:hover{
+    border-color:#0000ff;
+    
+}
+
+.Productos li:active{
+    border-color:#ff0000;
+}
+
+.Productos h2{
+
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.Productos li:hover h2{
+    font-size: 33px;
+}
+
+.producto-descripcion{
+    font-size: 18px;
+}
+
+.producto-precio{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer{
+    text-align: center;
+    background: url(Imagenes/bg.jpg);
+    padding: 40px;
+}
+
+.Copyright{
+    color: #ffffff;
+    font-size: 13px;
+    margin: 20px;
+}
+
+.formulario{
+    width: 940px;
+    margin: 0  auto;
+}
+
+form{
+    margin: 50px 0;
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+.input-padron{
+       display: block;
+       margin: 0 0 20px;
+       padding: 10px 25px;
+       width: 50%;
+}
+
+.checkbox{
+    margin: 20px 0;
+    color: #ffb810;
+}
+
+legend{
+    color:#ffb810
+}
+
+.Enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: #ffb810;
+    border: none;
+    border-radius: 7px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.Enviar:hover{
+    background:darkorange ;
+    transform: scale(1.2)
+}
+
+table{
+    margin: 40px 40px;
+
+}
+
+thead{
+    background: #555555;
+    color: #ffb810;
+    font-weight: bold;
+}
+
+td,th{
+    border: 2px solid #000000;
+    padding: 8px 15px;
+}
+
+/*Aqui inicia el  css para nuestra home*/
+
+.Banner{
+    width: 100%;
+}
+
+.principal{
+    padding: 3em 0;
+    background: #fefefe;
+    width: 940px;
+    margin: 0 auto
+}
+
+.titulo-principal{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+    text-shadow: 2px 2px 10px orange;
+}
+
+
+.principal p{
+    margin: 0 0 1em;
+}
+
+.principal strong{
+    font-weight: bold;
+}
+
+.principal em{
+    font-style: italic;
+}
+
+.utensilios{
+    width: 170px;
+    float: left;
+    margin: 0 20px 20px 0;
+    box-shadow: 10px 10px 30px 15px #000000;
+}
+
+.mapa{
+    padding: 3em 0;
+    background: linear-gradient(#fefefe,#888888);
+}
+
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.mapa-contenido{
+      width: 940px;
+      margin: 0 auto;
+}
+
+.diferenciales{
+    padding: 3em 0;
+    background: #888888;
+    box-shadow: inset 0 0 30px 15px #555555;
+}
+
+.Contenido-Diferenciales{
+    width: 640px;
+    margin: 0 auto;
+}
+
+.Lista-Diferenciales{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.items{
+    line-height: 1.5;
+}
+
+.items:before{
+    content: "🔯";
+}
+
+.items:first-child{
+    font-weight: bold;
+}
+
+.Imagen-Diferenciales{
+    width: 60%;
+    transition: 400ms;
+    box-shadow: 10px 10px 30px 25px #000000;
+}
+
+.Imagen-Diferenciales:hover{
+    opacity: 0.3;
+}
+
+.video{
+    width: 550px;
+    margin: 1em auto;
+}
+
+@media screen and (max-width:480px){
+     h1{
+        text-align: center;
+     }
+     nav{
+        position: static;
+     }
+    .caja, .principal, .mapa-contenido, .Contenido-Diferenciales, .video{
+            width: auto;
+    }
+    .Lista-Diferenciales, .Imagen-Diferenciales{
+            width: 100%;
+    }
+    
+}
